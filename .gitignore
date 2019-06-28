@@ -1,0 +1,5 @@
+*.tfstate*
+*.terraform
+nginx.conf
+dave.pem
+
