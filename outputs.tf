@@ -9,5 +9,14 @@ output "http_80_sg_id" {
 }
 output "ssh_22_sg_id" {
   description = "The security group that allows SSH traffic to 22 from specified IP addresses."
-  value       = module.http_80_security_group.this_security_group_id
+  value       = module.ssh_22_security_group.this_security_group_id
+}
+
+output "instance_ip_addr" {
+  value       = "${aws_instance.web.public_ip}"
+  description = "The public IP address of the main server instance."
+}
+
+output "public_subnet_ids" {
+  value = "${module.vpc.private_subnets}"
 }
