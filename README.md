@@ -51,11 +51,12 @@ ssh -i dave.pem dave@3.220.174.188
 ```
 ## Test pages displayed
 
-home page: displays the default nginx server page
-hello: The universal greeting
-example: Prompts for basic auth, and displays content from www.orlandosentinel.com.
+home page: displays the default nginx server page.
 
-3.220.174.188/hello will display Hello World. 
+hello: The universal greeting.
+
+example: Prompts for basic auth, and displays content from www.orlandosentinel.com.
+I chose to use a different website than http://example.com, as it's dead. 
 
 ## Release History
 
